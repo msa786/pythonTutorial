@@ -42,8 +42,16 @@
 # with open('simpleFile.txt', 'r') as file:
 #     print(file.read())
 
-with open('simpleFile.txt', 'a') as file:
+# using with for file opening so i don't need to close the file
+with open('simpleFile.txt', 'w') as file:
     file.write("overwriting the original line \n")
 
 with open('simpleFile.txt', 'r') as file:
     print(file.read())
+
+# using try block to manage any exceptions with regards to file handling
+try:
+    with open('simpleFile1.txt', 'r') as file:
+        print(file.read())
+except FileNotFoundError:
+    print("file not found please check the file name and path")
