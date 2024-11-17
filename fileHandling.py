@@ -11,10 +11,30 @@
 # 'a' - Append mode: Opens a file for appending (creates a new file if it doesn't exist).
 #
 # 'b' - Binary mode: Used with other modes to open a file in binary mode (e.g., 'rb', 'wb').
-
+#
 # file = open("simpleFile.txt", 'w')
 # file.write("Welcome to File handling in python")
-file = open('simpleFile.txt')
-content = file.read()
-print(content)
+# File Context Managers
+# Using a with statement is a best practice for file handling. It ensures that the file is properly closed after its suite finishes, even if an exception is raised.
+#
+# Example:
+# python
+# with open('example.txt', 'r') as file:
+#     content = file.read()
+#     print(content)
+# # No need to explicitly close the file
+
+
+# Reading file
+# file = open('simpleFile.txt')
+# content = file.read()
+# print(content)
+# file.close()
+
+# #writing file
+file = open('simpleFile.txt', 'r')
+file.write("This is a new line \n")
+
+file = open('simpleFile.txt', 'r')
+print(file.read())
 file.close()
