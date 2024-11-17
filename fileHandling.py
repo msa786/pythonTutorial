@@ -32,9 +32,18 @@
 # file.close()
 
 # #writing file
-file = open('simpleFile.txt', 'r')
-file.write("This is a new line \n")
+# file = open('simpleFile.txt', 'r')
+# file.write("This is a new line \n")
+#
+# file = open('simpleFile.txt', 'r')
+# print(file.read())
+# file.close()
 
-file = open('simpleFile.txt', 'r')
-print(file.read())
-file.close()
+# with open('simpleFile.txt', 'r') as file:
+#     print(file.read())
+
+with open('simpleFile.txt', 'a') as file:
+    file.write("overwriting the original line \n")
+
+with open('simpleFile.txt', 'r') as file:
+    print(file.read())
