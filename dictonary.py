@@ -161,24 +161,25 @@
 # If you have any specific use cases in mind, feel free to ask!
 
 my_dict = {
-    "name":"shahnawaz",
+    "name":"Shahnawaz",
     "age":27,
-    "region": "asia"
+    "region": "asia",
+    "mobileNumber": 12345678
 }
-print(my_dict)
-print(my_dict["region"])
-my_dict["email"] = "shahnawaz@gmail.com"
-print(my_dict)
-my_dict["name"] = "alam"
-print(my_dict)
-del my_dict["name"]
-print(my_dict)
-my_dict.pop("age")
-print(my_dict)
-
-for key in my_dict:
-    print(key)
-for value in my_dict.values():
-    print(value)
+# print(my_dict)
+# print(my_dict["region"])
+# my_dict["email"] = "shahnawaz@gmail.com"
+# print(my_dict)
+# my_dict["name"] = "alam"
+# print(my_dict)
+# del my_dict["name"]
+# print(my_dict)
+# my_dict.pop("age")
+# print(my_dict)
+#
+# for key in my_dict:
+#     print(key)
+# for value in my_dict.values():
+#     print(value)
 for key, value in my_dict.items():
     print(key, value)
