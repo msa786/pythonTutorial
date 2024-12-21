@@ -12,6 +12,7 @@ years = age_delta.days // 365
 days = age_delta.days
 weeks = age_delta.days // 7
 hours = age_delta.total_seconds() // 3600
-# mintutes = age_delta.min // 3600 *60
+minutes = age_delta.total_seconds() // 60
+seconds = age_delta.total_seconds()
 
-print(f"You are {years} years, {days} days, {weeks} weeks, {int(hours)} hours old")
+print(f"You are {years} years, {days} days, {weeks} weeks, {int(hours)} hours old, {int(minutes)} minutes and {int(seconds)} seconds old.")
