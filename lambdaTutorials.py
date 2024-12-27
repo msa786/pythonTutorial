@@ -27,3 +27,6 @@ def demonstrate_lambdas():
 
 
 demonstrate_lambdas()
+# simple square lambda example
+square = lambda x: x ** 2
+print(square(5))
